@@ -10,6 +10,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(SOURCES
   src/main.cpp
+  src/error.cpp
+  src/parser.cpp
+  src/globals.cpp
+  src/tester.cpp
+  src/semanticizer.cpp
 )
 
 add_executable(${PROJECT_NAME}
