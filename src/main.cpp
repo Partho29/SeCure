@@ -1,14 +1,14 @@
 #include "parser.h"
+#include "semantic.h"
 #include "main.h"
-
+#include "globals.h"
+#include <error.h>
 
 int main(int argc, char **argv) {
-
-  parser::parse(argc, argv);
-  parser::printCOMMANDS();
-  parser::COMMANDS.clear();
-
-  
-  
-
+  global::ARGC = argc;
+  global::ARGV = argv;
+  parser::parse();
+  //parser::printCOMMANDS();
+  if(semantic::analysis()) {/* Run execution engine*/}
+  return 0;
 }

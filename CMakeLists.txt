@@ -14,7 +14,7 @@ set(SOURCES
   src/parser.cpp
   src/globals.cpp
   src/tester.cpp
-  src/semanticizer.cpp
+  src/semantic.cpp
 )
 
 add_executable(${PROJECT_NAME}
